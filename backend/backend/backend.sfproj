@@ -35,6 +35,10 @@
     <ProjectReference Include="..\API\API.csproj">
       <ServiceLaunchUrl>http://localhost:{ServicePort}/weatherforecast</ServiceLaunchUrl>
     </ProjectReference>
+    <ProjectReference Include="..\HealthMonitoringService\HealthMonitoringService.csproj" />
+    <ProjectReference Include="..\HealthStatus\HealthStatus.csproj">
+      <ServiceLaunchUrl>http://localhost:{ServicePort}/</ServiceLaunchUrl>
+    </ProjectReference>
     <ProjectReference Include="..\NotificationService\NotificationService.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
