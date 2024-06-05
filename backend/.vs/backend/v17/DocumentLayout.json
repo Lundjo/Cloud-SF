@@ -1,71 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\clout sf\\Cloud-SF\\backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\queues\\adminnotificationqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\queues\\adminnotificationqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\blobs\\images\\azureblobstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\blobs\\images\\azureblobstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\auth\\guard\\resourceguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\auth\\guard\\resourceguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminNotificationQueue.cs",
-              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\queues\\AdminNotificationQueue.cs",
-              "RelativeDocumentMoniker": "RedditDataRepository\\queues\\AdminNotificationQueue.cs",
-              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\queues\\AdminNotificationQueue.cs",
-              "RelativeToolTip": "RedditDataRepository\\queues\\AdminNotificationQueue.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T12:28:16.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AzureBlobStorage.cs",
-              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\blobs\\images\\AzureBlobStorage.cs",
-              "RelativeDocumentMoniker": "RedditDataRepository\\blobs\\images\\AzureBlobStorage.cs",
-              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\blobs\\images\\AzureBlobStorage.cs",
-              "RelativeToolTip": "RedditDataRepository\\blobs\\images\\AzureBlobStorage.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T14:09:16.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResourceGuard.cs",
-              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
-              "RelativeDocumentMoniker": "RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
-              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
-              "RelativeToolTip": "RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T14:05:32.068Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

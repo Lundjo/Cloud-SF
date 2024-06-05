@@ -5,9 +5,11 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "backend", "backend\backend.sfproj", "{15D3D968-DC4A-440C-83F6-09AB5E69AFD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{A3BE0361-7346-4E06-9264-671851A864CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{A3BE0361-7346-4E06-9264-671851A864CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedditDataRepository", "RedditDataRepository\RedditDataRepository.csproj", "{18ACC5ED-91E7-42FA-B196-141BD9757B8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedditDataRepository", "RedditDataRepository\RedditDataRepository.csproj", "{18ACC5ED-91E7-42FA-B196-141BD9757B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{0EA787A5-0188-4153-8EEF-574257A4D540}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,14 @@ Global
 		{18ACC5ED-91E7-42FA-B196-141BD9757B8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{18ACC5ED-91E7-42FA-B196-141BD9757B8F}.Release|x64.ActiveCfg = Release|Any CPU
 		{18ACC5ED-91E7-42FA-B196-141BD9757B8F}.Release|x64.Build.0 = Release|Any CPU
+		{0EA787A5-0188-4153-8EEF-574257A4D540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA787A5-0188-4153-8EEF-574257A4D540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA787A5-0188-4153-8EEF-574257A4D540}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0EA787A5-0188-4153-8EEF-574257A4D540}.Debug|x64.Build.0 = Debug|Any CPU
+		{0EA787A5-0188-4153-8EEF-574257A4D540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EA787A5-0188-4153-8EEF-574257A4D540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EA787A5-0188-4153-8EEF-574257A4D540}.Release|x64.ActiveCfg = Release|Any CPU
+		{0EA787A5-0188-4153-8EEF-574257A4D540}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

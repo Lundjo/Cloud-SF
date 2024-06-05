@@ -1,7 +1,0 @@
-D:\clout sf\Cloud-SF\backend\API\obj\Debug\net8.0\win-x64\API.csproj.AssemblyReference.cache
-D:\clout sf\Cloud-SF\backend\API\obj\Debug\net8.0\win-x64\API.GeneratedMSBuildEditorConfig.editorconfig
-D:\clout sf\Cloud-SF\backend\API\obj\Debug\net8.0\win-x64\API.AssemblyInfoInputs.cache
-D:\clout sf\Cloud-SF\backend\API\obj\Debug\net8.0\win-x64\API.AssemblyInfo.cs
-D:\clout sf\Cloud-SF\backend\API\obj\Debug\net8.0\win-x64\API.csproj.CoreCompileInputs.cache
-D:\clout sf\Cloud-SF\backend\API\obj\Debug\net8.0\win-x64\API.MvcApplicationPartsAssemblyInfo.cache
-D:\clout sf\Cloud-SF\backend\API\obj\Debug\net8.0\win-x64\API.sourcelink.json

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\RedditDataRepository.csproj": {}
+    "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj": {}
   },
   "projects": {
-    "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\RedditDataRepository.csproj": {
+    "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\RedditDataRepository.csproj",
-        "projectName": "RedditDataRepository",
-        "projectPath": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\RedditDataRepository.csproj",
+        "projectUniqueName": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj",
+        "projectName": "NotificationService",
+        "projectPath": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj",
         "packagesPath": "C:\\Users\\Ludi\\.nuget\\packages\\",
-        "outputPath": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\obj\\",
+        "outputPath": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ludi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,25 +49,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Core": {
+            "Microsoft.ServiceFabric.Services": {
               "target": "Package",
-              "version": "[5.3.0, )"
+              "version": "[7.1.1951, )"
             },
             "Microsoft.ServiceFabric.Services.Remoting": {
               "target": "Package",
               "version": "[7.1.1951, )"
-            },
-            "Microsoft.WindowsAzure.ConfigurationManager": {
-              "target": "Package",
-              "version": "[3.2.3, )"
-            },
-            "System.IdentityModel.Tokens.Jwt": {
-              "target": "Package",
-              "version": "[7.6.0, )"
-            },
-            "WindowsAzure.Storage": {
-              "target": "Package",
-              "version": "[9.3.3, )"
             }
           },
           "imports": [
@@ -81,12 +69,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.5, 8.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.5, 8.0.5]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.5, 8.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

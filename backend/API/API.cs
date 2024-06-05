@@ -1,16 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Fabric;
-using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.ServiceFabric.Services.Communication.AspNetCore;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
-using Microsoft.ServiceFabric.Data;
+using System.Fabric;
 
 namespace API
 {
@@ -22,6 +13,7 @@ namespace API
         public API(StatelessServiceContext context)
             : base(context)
         { }
+
 
         /// <summary>
         /// Optional override to create listeners (like tcp, http) for this service instance.
@@ -44,11 +36,31 @@ namespace API
                                     .UseContentRoot(Directory.GetCurrentDirectory())
                                     .UseServiceFabricIntegration(listener, ServiceFabricIntegrationOptions.None)
                                     .UseUrls(url);
-                        builder.Services.AddControllers();
-                        var app = builder.Build();
-                        app.UseAuthorization();
-                        app.MapControllers();
-                        
+
+
+                        _ = builder.Services.AddCors();
+                        _ = builder.Services.AddControllers();
+                        _ = builder.Services.AddDistributedMemoryCache();
+                        _ = builder.Services.AddSession(options =>
+                        {
+                            options.IdleTimeout = TimeSpan.FromMinutes(60);
+                            options.Cookie.HttpOnly = true;
+                            options.Cookie.IsEssential = true;
+                        });
+
+                        WebApplication app = builder.Build();
+
+                        _ = app.UseSession();
+
+                        _ = app.UseCors(options =>
+                        {
+                            _ = options.AllowAnyOrigin()
+                                    .AllowAnyMethod()
+                                    .AllowAnyHeader();
+                        });
+
+                        _ = app.MapControllers();
+
                         return app;
 
                     }))
