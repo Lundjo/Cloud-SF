@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RedditDataRepository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebfb8605dba11d458e1b5ec4444b04649ad711ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42dc5384dfdba3f715e7f2421d0b46d0a951c521")]
 [assembly: System.Reflection.AssemblyProductAttribute("RedditDataRepository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RedditDataRepository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,6 @@
+D:\clout sf\Cloud-SF\backend\RedditDataRepository\obj\Debug\net8.0\RedditDataRepository.csproj.AssemblyReference.cache
+D:\clout sf\Cloud-SF\backend\RedditDataRepository\obj\Debug\net8.0\RedditDataRepository.GeneratedMSBuildEditorConfig.editorconfig
+D:\clout sf\Cloud-SF\backend\RedditDataRepository\obj\Debug\net8.0\RedditDataRepository.AssemblyInfoInputs.cache
+D:\clout sf\Cloud-SF\backend\RedditDataRepository\obj\Debug\net8.0\RedditDataRepository.AssemblyInfo.cs
+D:\clout sf\Cloud-SF\backend\RedditDataRepository\obj\Debug\net8.0\RedditDataRepository.csproj.CoreCompileInputs.cache
+D:\clout sf\Cloud-SF\backend\RedditDataRepository\obj\Debug\net8.0\RedditDataRepository.sourcelink.json

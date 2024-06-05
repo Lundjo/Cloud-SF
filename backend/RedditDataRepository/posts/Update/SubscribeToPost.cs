@@ -1,4 +1,4 @@
-﻿using DataRepository.classes.Posts;
+﻿using RedditDataRepository.classes.Posts;
 using Microsoft.WindowsAzure.Storage.Table;
 
 namespace RedditDataRepository.posts.Update
