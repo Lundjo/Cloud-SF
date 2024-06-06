@@ -1,4 +1,5 @@
-﻿using System.IdentityModel.Tokens.Jwt;
+﻿using Microsoft.AspNetCore.Http;
+using System.IdentityModel.Tokens.Jwt;
 using System.Web.Http.Controllers;
 
 namespace RedditDataRepository.auth.guard
@@ -20,13 +21,12 @@ namespace RedditDataRepository.auth.guard
         /// It then compares the extracted email with the provided email. 
         /// If they match, it returns true; otherwise, it returns false.
         /// </remarks>
-        public static bool RunCheck(HttpActionContext actionContext, string email)
+        public static bool RunCheck(HttpContext httpContext, string email)
         {
             try
             {
                 // Get JWT token from the request
-                string token = actionContext.Request.Headers.GetValues("Authorization")
-                                                        .FirstOrDefault()?.Replace("Bearer ", "");
+                string token = httpContext.Request.Headers["Authorization"].FirstOrDefault()?.Replace("Bearer ", "");
 
                 // Validate and decode the JWT token
                 var handler = new JwtSecurityTokenHandler();

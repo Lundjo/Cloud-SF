@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\clout sf\\Cloud-SF\\backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\auth\\guard\\resourceguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\auth\\guard\\resourceguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResourceGuard.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
+              "RelativeDocumentMoniker": "RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
+              "RelativeToolTip": "RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABwAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:04:06.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAgwIAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T14:43:05.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\CommentController.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "API\\Controllers\\CommentController.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAAAIUAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T14:44:20.242Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
