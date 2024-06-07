@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "D:\\clout sf\\Cloud-SF\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\auth\\guard\\resourceguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\auth\\guard\\resourceguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\classes\\posts\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\classes\\posts\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\classes\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\classes\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\auth\\guard\\resourceguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\auth\\guard\\resourceguard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,15 +42,39 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResourceGuard.cs",
-              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
-              "RelativeDocumentMoniker": "RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
-              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
-              "RelativeToolTip": "RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAABwAAAB1AAAA",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\classes\\Users\\User.cs",
+              "RelativeDocumentMoniker": "RedditDataRepository\\classes\\Users\\User.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\classes\\Users\\User.cs",
+              "RelativeToolTip": "RedditDataRepository\\classes\\Users\\User.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAADwvwcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T15:04:06.983Z",
+              "WhenOpened": "2024-06-07T13:04:46.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Post.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\classes\\Posts\\Post.cs",
+              "RelativeDocumentMoniker": "RedditDataRepository\\classes\\Posts\\Post.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\classes\\Posts\\Post.cs",
+              "RelativeToolTip": "RedditDataRepository\\classes\\Posts\\Post.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAUwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T13:02:10.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PostController.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\PostController.cs",
+              "RelativeToolTip": "API\\Controllers\\PostController.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAiwG0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T18:12:33.483Z",
               "EditorCaption": ""
             },
             {
@@ -45,23 +85,45 @@
               "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "API\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAgwIAAAAAQAAAA",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAqwFkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T14:43:05.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T14:43:05.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "ImagesController.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\ImagesController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ImagesController.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\ImagesController.cs",
+              "RelativeToolTip": "API\\Controllers\\ImagesController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T18:00:24.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResourceGuard.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
+              "RelativeDocumentMoniker": "RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
+              "RelativeToolTip": "RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABwAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:04:06.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CommentController.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\CommentController.cs",
               "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\CommentController.cs",
               "RelativeToolTip": "API\\Controllers\\CommentController.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAAAIUAAABJAAAA",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAAAIUAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T14:44:20.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T14:44:20.242Z"
             }
           ]
         }

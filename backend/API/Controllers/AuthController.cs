@@ -89,7 +89,6 @@ namespace API.Controllers
                 else
                 {
                     // Access form data and put into user object
-                    // Access form data and put into user object
                     User user = new User
                     {
                         PartitionKey = "User",
