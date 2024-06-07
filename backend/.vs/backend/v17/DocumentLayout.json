@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\clout sf\\Cloud-SF\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\votecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\votecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,19 +51,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "VoteController.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\VoteController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\VoteController.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\VoteController.cs",
+              "RelativeToolTip": "API\\Controllers\\VoteController.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwBcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T15:31:11.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\UserController.cs",
               "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\UserController.cs",
               "RelativeToolTip": "API\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAAAH8AAABZAAAA",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAYwJ4AAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T14:40:01.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\classes\\Users\\User.cs",
               "RelativeDocumentMoniker": "RedditDataRepository\\classes\\Users\\User.cs",
@@ -67,12 +84,11 @@
               "RelativeToolTip": "RedditDataRepository\\classes\\Users\\User.cs",
               "ViewState": "AQIAAD4AAAAAAAAAAAAUwAcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T13:04:46.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T13:04:46.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Post.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\classes\\Posts\\Post.cs",
               "RelativeDocumentMoniker": "RedditDataRepository\\classes\\Posts\\Post.cs",
@@ -84,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PostController.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\PostController.cs",
@@ -92,12 +108,11 @@
               "RelativeToolTip": "API\\Controllers\\PostController.cs",
               "ViewState": "AQIAAEEAAAAAAAAAAAAQwHYAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T18:12:33.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T18:12:33.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
@@ -105,12 +120,11 @@
               "RelativeToolTip": "API\\Controllers\\AuthController.cs",
               "ViewState": "AQIAAEoAAAAAAAAAAAAYwGgAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T14:43:05.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T14:43:05.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ImagesController.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\ImagesController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\ImagesController.cs",
@@ -122,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ResourceGuard.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
               "RelativeDocumentMoniker": "RedditDataRepository\\auth\\guard\\ResourceGuard.cs",
@@ -134,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CommentController.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\CommentController.cs",
