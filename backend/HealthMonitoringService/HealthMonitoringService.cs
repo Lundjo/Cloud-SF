@@ -3,6 +3,8 @@ using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
 using Microsoft.ServiceFabric.Services.Runtime;
 using System.Fabric;
+using RedditDataRepository.tables.entities;
+using RedditDataRepository.tables;
 
 namespace HealthMonitoringService
 {
@@ -12,6 +14,7 @@ namespace HealthMonitoringService
     internal sealed class HealthMonitoringService : StatelessService
     {
         INotificationServiceContract notification = ServiceProxy.Create<INotificationServiceContract>(new Uri("fabric:/LeRedditService/NotificationService"));
+        private static HealthCheckRepository repository = new HealthCheckRepository();
 
         public HealthMonitoringService(StatelessServiceContext context)
             : base(context)
@@ -43,20 +46,32 @@ namespace HealthMonitoringService
                     bool not = await notification.IAmAlive();
 
                     if (reddit_online)
+                    {
                         ServiceEventSource.Current.ServiceMessage(this.Context, "Reddit is online");
+                        LogHealthCheck("Reddit is online", this.Context.ServiceName.ToString());
+                    }
                     else
+                    {
                         ServiceEventSource.Current.ServiceMessage(this.Context, "Reddit is offline");
-
+                        LogHealthCheck("Reddit is offline", this.Context.ServiceName.ToString());
+                    }
                     if (not)
+                    {
                         ServiceEventSource.Current.ServiceMessage(this.Context, "Notification is online");
+                        LogHealthCheck("Notification is online", this.Context.ServiceName.ToString());
+                    }
                     else
+                    {
                         ServiceEventSource.Current.ServiceMessage(this.Context, "Notification is offline");
-
+                        LogHealthCheck("Notification is offline", this.Context.ServiceName.ToString());
+                    }
                 }
                 catch
                 {
                     ServiceEventSource.Current.ServiceMessage(this.Context, "Reddit is offline");
+                    LogHealthCheck("Reddit is offline", this.Context.ServiceName.ToString());
                     ServiceEventSource.Current.ServiceMessage(this.Context, "Notification is offline");
+                    LogHealthCheck("Notification is offline", this.Context.ServiceName.ToString());
                 }
 
                 await Task.Delay(TimeSpan.FromSeconds(5), cancellationToken);
@@ -68,7 +83,7 @@ namespace HealthMonitoringService
             using var httpClient = new HttpClient();
             try
             {
-                var response = await httpClient.GetAsync("http://localhost:8370/api/auth/health");
+                var response = await httpClient.GetAsync("http://localhost:8767/api/auth/health");
                 return response.IsSuccessStatusCode;
             }
             catch (HttpRequestException)
@@ -76,6 +91,13 @@ namespace HealthMonitoringService
                 // Return false if there's an exception
                 return false;
             }
+        }
+
+        private void LogHealthCheck(string status, string service)
+        {
+            DateTime timestamp = DateTime.UtcNow;
+            HealthCheck healthCheckEntity = new HealthCheck(timestamp.ToString("yyyyMMddHHmmssfff"), status, service);
+            repository.CreateAsync(healthCheckEntity).Wait();
         }
     }
 }
