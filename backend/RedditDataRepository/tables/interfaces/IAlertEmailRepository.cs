@@ -4,22 +4,16 @@ using System.ServiceModel;
 
 namespace RedditDataRepository.tables.interfaces
 {
-    [ServiceContract]
     public interface IAlertEmailRepository
     {
-        [OperationContract]
-        bool Create(AlertEmail alertEmail);
+        Task<bool> CreateAsync(AlertEmail alertEmail);
 
-        [OperationContract]
-        AlertEmail Read(string id);
+        Task<AlertEmail> ReadAsync(string id);
 
-        [OperationContract]
-        IQueryable<AlertEmail> ReadAll();
+        Task<IEnumerable<AlertEmail>> ReadAllAsync();
 
-        [OperationContract]
-        bool Update(string id, AlertEmail alertEmail);
+        Task<bool> UpdateAsync(string id, AlertEmail alertEmail);
 
-        [OperationContract]
-        bool Delete(string id);
+        Task<bool> DeleteAsync(string id);
     }
 }

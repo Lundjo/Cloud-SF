@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "D:\\clout sf\\Cloud-SF\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0FCDEA67-9C25-4D23-835F-5781CB55F3C7}|HealthMonitoringService\\HealthMonitoringService.csproj|d:\\clout sf\\cloud-sf\\backend\\healthmonitoringservice\\healthmonitoringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FCDEA67-9C25-4D23-835F-5781CB55F3C7}|HealthMonitoringService\\HealthMonitoringService.csproj|solutionrelative:healthmonitoringservice\\healthmonitoringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\tables\\alertemailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\tables\\alertemailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\tables\\entities\\healthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\tables\\entities\\healthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\tables\\interfaces\\ialertemailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\tables\\interfaces\\ialertemailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\tables\\interfaces\\ihealthcheckrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\tables\\interfaces\\ihealthcheckrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\tables\\healthcheckrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\tables\\healthcheckrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\tables\\alertemailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\tables\\alertemailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\tables\\entities\\healthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\tables\\entities\\healthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\cloud\\account\\azuretablestoragecloudaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\cloud\\account\\azuretablestoragecloudaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0FCDEA67-9C25-4D23-835F-5781CB55F3C7}|HealthMonitoringService\\HealthMonitoringService.csproj|d:\\clout sf\\cloud-sf\\backend\\healthmonitoringservice\\healthmonitoringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FCDEA67-9C25-4D23-835F-5781CB55F3C7}|HealthMonitoringService\\HealthMonitoringService.csproj|solutionrelative:healthmonitoringservice\\healthmonitoringservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|d:\\clout sf\\cloud-sf\\backend\\redditdatarepository\\tables\\interfaces\\ihealthcheckrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18ACC5ED-91E7-42FA-B196-141BD9757B8F}|RedditDataRepository\\RedditDataRepository.csproj|solutionrelative:redditdatarepository\\tables\\interfaces\\ihealthcheckrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|solutionrelative:api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3BE0361-7346-4E06-9264-671851A864CD}|API\\API.csproj|d:\\clout sf\\cloud-sf\\backend\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AzureTableStorageCloudAccount.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\cloud\\account\\AzureTableStorageCloudAccount.cs",
               "RelativeDocumentMoniker": "RedditDataRepository\\cloud\\account\\AzureTableStorageCloudAccount.cs",
@@ -71,20 +75,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "IAlertEmailRepository.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\interfaces\\IAlertEmailRepository.cs",
+              "RelativeDocumentMoniker": "RedditDataRepository\\tables\\interfaces\\IAlertEmailRepository.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\interfaces\\IAlertEmailRepository.cs",
+              "RelativeToolTip": "RedditDataRepository\\tables\\interfaces\\IAlertEmailRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T14:09:41.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AlertEmailRepository.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\AlertEmailRepository.cs",
               "RelativeDocumentMoniker": "RedditDataRepository\\tables\\AlertEmailRepository.cs",
               "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\AlertEmailRepository.cs",
               "RelativeToolTip": "RedditDataRepository\\tables\\AlertEmailRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA/AAAA",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAowHQAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T12:57:01.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "HealthCheckRepository.cs",
+              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\HealthCheckRepository.cs",
+              "RelativeDocumentMoniker": "RedditDataRepository\\tables\\HealthCheckRepository.cs",
+              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\HealthCheckRepository.cs",
+              "RelativeToolTip": "RedditDataRepository\\tables\\HealthCheckRepository.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAswIkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T12:54:27.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "IHealthCheckRepository.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\interfaces\\IHealthCheckRepository.cs",
               "RelativeDocumentMoniker": "RedditDataRepository\\tables\\interfaces\\IHealthCheckRepository.cs",
@@ -92,24 +122,12 @@
               "RelativeToolTip": "RedditDataRepository\\tables\\interfaces\\IHealthCheckRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T13:18:17.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HealthCheckRepository.cs",
-              "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\HealthCheckRepository.cs",
-              "RelativeDocumentMoniker": "RedditDataRepository\\tables\\HealthCheckRepository.cs",
-              "ToolTip": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\HealthCheckRepository.cs",
-              "RelativeToolTip": "RedditDataRepository\\tables\\HealthCheckRepository.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAADwAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T12:54:27.449Z",
+              "WhenOpened": "2024-06-08T13:18:17.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HealthCheck.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\tables\\entities\\HealthCheck.cs",
               "RelativeDocumentMoniker": "RedditDataRepository\\tables\\entities\\HealthCheck.cs",
@@ -122,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CommentController.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\CommentController.cs",
@@ -134,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
@@ -146,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "API.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\API\\API.cs",
               "RelativeDocumentMoniker": "API\\API.cs",
@@ -158,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "NotificationService.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.cs",
               "RelativeDocumentMoniker": "NotificationService\\NotificationService.cs",
@@ -170,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "HealthMonitoringService.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\HealthMonitoringService\\HealthMonitoringService.cs",
               "RelativeDocumentMoniker": "HealthMonitoringService\\HealthMonitoringService.cs",
@@ -183,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "INotificationServiceContract.cs",
               "DocumentMoniker": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\Contracts\\INotificationServiceContract.cs",
               "RelativeDocumentMoniker": "RedditDataRepository\\Contracts\\INotificationServiceContract.cs",
