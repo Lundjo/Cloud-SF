@@ -60,6 +60,10 @@
             "Microsoft.ServiceFabric.Services.Remoting": {
               "target": "Package",
               "version": "[7.1.1951, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.3, )"
             }
           },
           "imports": [
