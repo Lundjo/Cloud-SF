@@ -1,118 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj": {}
+    "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\NotificationService\\NotificationService.csproj": {}
   },
   "projects": {
-    "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj": {
+    "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj",
-        "projectName": "NotificationService",
-        "projectPath": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj",
+        "projectUniqueName": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj",
+        "projectName": "DataRepository",
+        "projectPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj",
         "packagesPath": "C:\\Users\\Ludi\\.nuget\\packages\\",
-        "outputPath": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Ludi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\Microsoft SDKs\\Azure\\.NET SDK\\v2.9\\packages": {},
-          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\RedditDataRepository.csproj": {
-                "projectPath": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\RedditDataRepository.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.ServiceFabric.Services": {
-              "target": "Package",
-              "version": "[7.1.1951, )"
-            },
-            "Microsoft.ServiceFabric.Services.Remoting": {
-              "target": "Package",
-              "version": "[7.1.1951, )"
-            },
-            "SendGrid": {
-              "target": "Package",
-              "version": "[9.29.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.5, 8.0.5]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.5, 8.0.5]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.5, 8.0.5]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
-        }
-      }
-    },
-    "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\RedditDataRepository.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\RedditDataRepository.csproj",
-        "projectName": "RedditDataRepository",
-        "projectPath": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\RedditDataRepository.csproj",
-        "packagesPath": "C:\\Users\\Ludi\\.nuget\\packages\\",
-        "outputPath": "D:\\clout sf\\Cloud-SF\\backend\\RedditDataRepository\\obj\\",
+        "outputPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ludi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -192,6 +91,107 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\NotificationService\\NotificationService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\NotificationService\\NotificationService.csproj",
+        "projectName": "NotificationService",
+        "projectPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\NotificationService\\NotificationService.csproj",
+        "packagesPath": "C:\\Users\\Ludi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\NotificationService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ludi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Azure\\.NET SDK\\v2.9\\packages": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj": {
+                "projectPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.ServiceFabric.Services": {
+              "target": "Package",
+              "version": "[7.1.1951, )"
+            },
+            "Microsoft.ServiceFabric.Services.Remoting": {
+              "target": "Package",
+              "version": "[7.1.1951, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[8.0.5, 8.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[8.0.5, 8.0.5]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[8.0.5, 8.0.5]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }

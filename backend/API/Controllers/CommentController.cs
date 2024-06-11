@@ -1,14 +1,14 @@
 ﻿using API.Models.comment;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.WindowsAzure.Storage.Queue;
-using RedditDataRepository.auth.guard;
-using RedditDataRepository.classes.Comments;
-using RedditDataRepository.cloud.account;
-using RedditDataRepository.cloud.queue;
-using RedditDataRepository.comments.Create;
-using RedditDataRepository.comments.Delete;
-using RedditDataRepository.comments.Read;
-using RedditDataRepository.queues;
+using DataRepository.auth.guard;
+using DataRepository.classes.Comments;
+using DataRepository.cloud.account;
+using DataRepository.cloud.queue;
+using DataRepository.comments.Create;
+using DataRepository.comments.Delete;
+using DataRepository.comments.Read;
+using DataRepository.queues;
 using System.Net;
 
 namespace API.Controllers

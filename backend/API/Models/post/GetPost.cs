@@ -1,4 +1,4 @@
-﻿using RedditDataRepository.classes.Comments;
+﻿using DataRepository.classes.Comments;
 
 namespace API.Models.post
 {

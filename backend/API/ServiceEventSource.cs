@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using System.Fabric;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace API
 {
-    [EventSource(Name = "MyCompany-backend-API")]
+    [EventSource(Name = "MyCompany-LeRedditService-API")]
     internal sealed class ServiceEventSource : EventSource
     {
         public static readonly ServiceEventSource Current = new ServiceEventSource();

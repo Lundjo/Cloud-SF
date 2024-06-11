@@ -1,13 +1,12 @@
 ﻿using API.Models.auth;
-using Microsoft.AspNetCore.Http;
+using DataRepository.auth.JWT.JWTBaseClass;
+using DataRepository.auth.JWT.JWTStorage.KeyStorage;
+using DataRepository.Blobs.Images;
+using DataRepository.classes.Users;
+using DataRepository.cloud.account;
+using DataRepository.users.Create;
+using DataRepository.users.Read;
 using Microsoft.AspNetCore.Mvc;
-using RedditDataRepository.auth.JWT.JWTBaseClass;
-using RedditDataRepository.auth.JWT.JWTStorage.KeyStorage;
-using RedditDataRepository.blobs.images;
-using RedditDataRepository.classes.Users;
-using RedditDataRepository.cloud.account;
-using RedditDataRepository.users.Create;
-using RedditDataRepository.users.Read;
 using System.Net;
 using System.Net.Http.Headers;
 
@@ -88,6 +87,7 @@ namespace API.Controllers
                 }
                 else
                 {
+                    // Access form data and put into user object
                     // Access form data and put into user object
                     User user = new User
                     {

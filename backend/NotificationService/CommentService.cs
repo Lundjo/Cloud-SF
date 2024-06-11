@@ -1,8 +1,7 @@
-﻿using RedditDataRepository.classes.Comments;
-using RedditDataRepository.classes.Posts;
-using RedditDataRepository.cloud.account;
-using RedditDataRepository.comments.Read;
-using RedditDataRepository.posts.Read;
+﻿using DataRepository.classes.Comments;
+using DataRepository.classes.Posts;
+using DataRepository.cloud.account;
+using DataRepository.posts.Read;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,6 +12,8 @@ using System.Text;
 using System.Threading.Tasks;
 using SendGrid.Helpers.Mail;
 using SendGrid;
+using DataRepository.Comments.Read;
+using DataRepository.Posts.Read;
 
 namespace NotificationService
 {

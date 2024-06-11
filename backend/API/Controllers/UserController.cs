@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RedditDataRepository.auth.guard;
-using RedditDataRepository.blobs.images;
-using RedditDataRepository.classes.Users;
-using RedditDataRepository.cloud.account;
-using RedditDataRepository.users.Read;
-using RedditDataRepository.users.Update;
+using DataRepository.auth.guard;
+using DataRepository.Blobs.Images;
+using DataRepository.classes.Users;
+using DataRepository.cloud.account;
+using DataRepository.users.Read;
+using DataRepository.users.Update;
 using System.Net;
 using System.Net.Http.Headers;
 using static System.Runtime.InteropServices.JavaScript.JSType;

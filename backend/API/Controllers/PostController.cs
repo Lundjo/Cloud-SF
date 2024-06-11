@@ -1,20 +1,21 @@
 ﻿using API.Models.post;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
-using RedditDataRepository.blobs.images;
-using RedditDataRepository.classes.Comments;
-using RedditDataRepository.classes.Posts;
-using RedditDataRepository.cloud.account;
-using RedditDataRepository.posts.Create;
+using DataRepository.Blobs.Images;
+using DataRepository.classes.Comments;
+using DataRepository.classes.Posts;
+using DataRepository.cloud.account;
+using DataRepository.posts.Create;
 using System.Net;
-using RedditDataRepository.comments.Read;
-using RedditDataRepository.posts.Read;
-using RedditDataRepository.auth.guard;
-using RedditDataRepository.comments.Delete;
-using RedditDataRepository.posts.Delete;
+using DataRepository.comments.Read;
+using DataRepository.posts.Read;
+using DataRepository.auth.guard;
+using DataRepository.comments.Delete;
+using DataRepository.posts.Delete;
 using System.Web;
-using RedditDataRepository.posts.Update;
-using RedditDataRepository.users.Read;
+using DataRepository.posts.Update;
+using DataRepository.users.Read;
+using DataRepository.Posts.Read;
 
 namespace API.Controllers
 {

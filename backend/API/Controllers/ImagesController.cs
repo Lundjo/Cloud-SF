@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RedditDataRepository.cloud.account;
-using RedditDataRepository.users.Read;
+using DataRepository.cloud.account;
+using DataRepository.users.Read;
 
 namespace API.Controllers
 {

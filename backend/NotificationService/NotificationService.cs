@@ -1,17 +1,17 @@
-using RedditDataRepository.Contracts;
+using DataRepository.Contracts;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Remoting.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
 using System.Fabric;
 using Microsoft.WindowsAzure.Storage.Queue;
-using RedditDataRepository.tables;
-using RedditDataRepository.cloud.queue;
-using RedditDataRepository.classes.Logs;
-using RedditDataRepository.cloud.account;
-using RedditDataRepository.comments.Read;
-using RedditDataRepository.logs.Create;
-using RedditDataRepository.queues;
-using RedditDataRepository;
+using DataRepository.tables;
+using DataRepository.cloud.queue;
+using DataRepository.classes.Logs;
+using DataRepository.cloud.account;
+using DataRepository.logs.Create;
+using DataRepository.queues;
+using DataRepository;
+using DataRepository.Comments.Read;
 
 namespace NotificationService
 {
@@ -40,7 +40,7 @@ namespace NotificationService
         /// <returns>A collection of listeners.</returns>
         protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
         {
-            return new ServiceInstanceListener[0];
+            return this.CreateServiceRemotingInstanceListeners();
         }
 
         /// <summary>

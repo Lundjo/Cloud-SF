@@ -1,89 +1,72 @@
-using RedditDataRepository.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Fabric;
+using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
+using DataRepository.Contracts;
+using DataRepository.tables;
+using DataRepository.tables.entities;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
 using Microsoft.ServiceFabric.Services.Runtime;
-using System.Fabric;
-using RedditDataRepository.tables.entities;
-using RedditDataRepository.tables;
 
 namespace HealthMonitoringService
 {
-    /// <summary>
-    /// An instance of this class is created for each service instance by the Service Fabric runtime.
-    /// </summary>
     internal sealed class HealthMonitoringService : StatelessService
     {
-        INotificationServiceContract notification = ServiceProxy.Create<INotificationServiceContract>(new Uri("fabric:/LeRedditService/NotificationService"));
-        private static HealthCheckRepository repository = new HealthCheckRepository();
+        private static INotificationServiceContract _notificationService;
+        private static HealthCheckRepository Repository;
 
         public HealthMonitoringService(StatelessServiceContext context)
             : base(context)
-        { }
+        {
+            try
+            {
+                Repository = new HealthCheckRepository();
+                ServiceEventSource.Current.ServiceMessage(context, "HealthCheckRepository instantiated successfully.");
+                // Initialize the notification service proxy
+                _notificationService = ServiceProxy.Create<INotificationServiceContract>(
+                    new Uri("fabric:/LeRedditService/NotificationService"));
+            }
+            catch (Exception ex)
+            {
+                ServiceEventSource.Current.ServiceMessage(context, $"Failed to instantiate HealthCheckRepository: {ex.Message}");
+            }
+        }
 
-        /// <summary>
-        /// Optional override to create listeners (e.g., TCP, HTTP) for this service replica to handle client or user requests.
-        /// </summary>
-        /// <returns>A collection of listeners.</returns>
         protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
         {
             return new ServiceInstanceListener[0];
         }
 
-        /// <summary>
-        /// This is the main entry point for your service instance.
-        /// </summary>
-        /// <param name="cancellationToken">Canceled when Service Fabric needs to shut down this service instance.</param>
         protected override async Task RunAsync(CancellationToken cancellationToken)
         {
-            while (true)
+            while (!cancellationToken.IsCancellationRequested)
             {
-                cancellationToken.ThrowIfCancellationRequested();
-
                 try
                 {
-                    // todo dodaj upis u tabelu
-                    bool reddit_online = await HealthCheck();
-                    bool not = await notification.IAmAlive();
+                    bool redditOnline = await HealthCheck("http://localhost:8370/api/auth/health");
+                    bool notificationOnline = await _notificationService.IAmAlive();
 
-                    if (reddit_online)
-                    {
-                        ServiceEventSource.Current.ServiceMessage(this.Context, "Reddit is online");
-                        LogHealthCheck("Reddit is online", this.Context.ServiceName.ToString());
-                    }
-                    else
-                    {
-                        ServiceEventSource.Current.ServiceMessage(this.Context, "Reddit is offline");
-                        LogHealthCheck("Reddit is offline", this.Context.ServiceName.ToString());
-                    }
-                    if (not)
-                    {
-                        ServiceEventSource.Current.ServiceMessage(this.Context, "Notification is online");
-                        LogHealthCheck("Notification is online", this.Context.ServiceName.ToString());
-                    }
-                    else
-                    {
-                        ServiceEventSource.Current.ServiceMessage(this.Context, "Notification is offline");
-                        LogHealthCheck("Notification is offline", this.Context.ServiceName.ToString());
-                    }
+                    LogHealthCheck(redditOnline, "Reddit");
+                    LogHealthCheck(notificationOnline, "Notification");
                 }
-                catch
+                catch (Exception ex)
                 {
-                    ServiceEventSource.Current.ServiceMessage(this.Context, "Reddit is offline");
-                    LogHealthCheck("Reddit is offline", this.Context.ServiceName.ToString());
-                    ServiceEventSource.Current.ServiceMessage(this.Context, "Notification is offline");
-                    LogHealthCheck("Notification is offline", this.Context.ServiceName.ToString());
+                    ServiceEventSource.Current.ServiceMessage(this.Context, $"Error in Health Monitoring: {ex.Message}");
                 }
 
                 await Task.Delay(TimeSpan.FromSeconds(5), cancellationToken);
             }
         }
 
-        public async Task<bool> HealthCheck()
+        private async Task<bool> HealthCheck(string url)
         {
             using var httpClient = new HttpClient();
             try
             {
-                var response = await httpClient.GetAsync("http://localhost:8767/api/auth/health");
+                var response = await httpClient.GetAsync(url);
                 return response.IsSuccessStatusCode;
             }
             catch (HttpRequestException)
@@ -93,11 +76,12 @@ namespace HealthMonitoringService
             }
         }
 
-        private void LogHealthCheck(string status, string service)
+        private void LogHealthCheck(bool isOnline, string serviceName)
         {
+            string status = isOnline ? "Online" : "Offline";
             DateTime timestamp = DateTime.UtcNow;
-            HealthCheck healthCheckEntity = new HealthCheck(timestamp.ToString("yyyyMMddHHmmssfff"), status, service);
-            repository.CreateAsync(healthCheckEntity).Wait();
+            HealthCheck healthCheckEntity = new HealthCheck(timestamp.ToString("yyyyMMddHHmmssfff"), status, serviceName);
+            Repository.CreateAsync(healthCheckEntity).Wait();
         }
     }
 }

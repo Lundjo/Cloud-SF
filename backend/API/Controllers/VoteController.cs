@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RedditDataRepository.classes.Votes;
-using RedditDataRepository.cloud.account;
-using RedditDataRepository.votes.Create;
-using RedditDataRepository.votes.Read;
+using DataRepository.classes.Votes;
+using DataRepository.cloud.account;
+using DataRepository.votes.Create;
+using DataRepository.votes.Read;
 using System.Net;
 using System.Web;
 

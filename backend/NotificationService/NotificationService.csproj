@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RedditDataRepository\RedditDataRepository.csproj" />
+    <ProjectReference Include="..\DataRepository\DataRepository.csproj" />
   </ItemGroup>
 
 </Project>
