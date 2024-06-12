@@ -179,7 +179,7 @@ namespace DataRepository.tables
                 .Where(
                     TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, "HealthCheck")
                     + " and " +
-                    TableQuery.GenerateFilterCondition("Status", QueryComparisons.Equal, "OK")
+                    TableQuery.GenerateFilterCondition("Status", QueryComparisons.Equal, "Online")
                     + " and " +
                     TableQuery.GenerateFilterCondition("Service", QueryComparisons.Equal, "Reddit")
                     + " and " +

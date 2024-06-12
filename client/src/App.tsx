@@ -33,6 +33,6 @@ function App() {
 }
 
 // Global API endpoint
-export const API_ENDPOINT: string = "http://localhost:8767/api/"
+export const API_ENDPOINT: string = "http://localhost:8370/api/"
 
 export default App;
