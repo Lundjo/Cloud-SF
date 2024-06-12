@@ -8,22 +8,22 @@
         /// <summary>
         /// Gets or sets the unique identifier of the comment.
         /// </summary>
-        public string Id { get; set; }
+        public string id { get; set; }
 
         /// <summary>
         /// Gets or sets the author of the comment.
         /// </summary>
-        public string Author { get; set; }
+        public string author { get; set; }
 
         /// <summary>
         /// Gets or sets the ID of the post the comment is associated with.
         /// </summary>
-        public string PostId { get; set; }
+        public string postId { get; set; }
 
         /// <summary>
         /// Gets or sets the content of the comment.
         /// </summary>
-        public string Content { get; set; }
+        public string content { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateComment"/> class.

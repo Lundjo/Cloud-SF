@@ -8790,11 +8790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\NotificationService\\NotificationService.csproj",
+      "projectUniqueName": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj",
       "projectName": "NotificationService",
-      "projectPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\NotificationService\\NotificationService.csproj",
+      "projectPath": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\NotificationService.csproj",
       "packagesPath": "C:\\Users\\Ludi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\NotificationService\\obj\\",
+      "outputPath": "D:\\clout sf\\Cloud-SF\\backend\\NotificationService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ludi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8815,8 +8815,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj": {
-              "projectPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj"
+            "D:\\clout sf\\Cloud-SF\\backend\\DataRepository\\DataRepository.csproj": {
+              "projectPath": "D:\\clout sf\\Cloud-SF\\backend\\DataRepository\\DataRepository.csproj"
             }
           }
         }

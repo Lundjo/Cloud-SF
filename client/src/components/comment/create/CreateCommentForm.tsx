@@ -15,19 +15,19 @@ import ValidateCommentData from "../../../validators/comment/create_comment_vali
 import CreateCommentService from "../../../services/comment/create/CreateCommentService";
 
 const CreateCommentForm: React.FC<{ post: IPost }> = ({
-  post: { Id, Author },
+  post: { id, author },
 }) => {
-  const { token } = useAuth();
+  const { token, email } = useAuth();
   const [errorMessage, setErrorMessage] = useState<string>("");
   const ref = React.useRef<MDXEditorMethods>(null); // grab markdown text
   const [submitting, setSubmitting] = useState<boolean>(false);
 
   // State to manage form data
   const [formData, setFormData] = useState<IComment>({
-    Id: "",
-    Author: Author,
-    Content: "",
-    PostId: Id,
+    id: "",
+    author: email ?? "",
+    content: "",
+    postId: id,
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -50,10 +50,10 @@ const CreateCommentForm: React.FC<{ post: IPost }> = ({
 
       if (success) {
         setFormData({
-          Id: "",
-          Author: Author,
-          Content: "",
-          PostId: Id,
+          id: "",
+          author: email ?? "",
+          content: "",
+          postId: id,
         });
 
         ref.current?.setMarkdown(""); // reset editor
@@ -85,10 +85,10 @@ const CreateCommentForm: React.FC<{ post: IPost }> = ({
   const handleCancel = () => {
     // Reset form data
     setFormData({
-      Id: "",
-      Author: Author,
-      Content: "",
-      PostId: Id,
+      id: "",
+      author: author,
+      content: "",
+      postId: id,
     });
 
     ref.current?.setMarkdown(""); // reset editor
@@ -99,7 +99,7 @@ const CreateCommentForm: React.FC<{ post: IPost }> = ({
     // Update state or perform any necessary actions with the markdown content
     setFormData({
       ...formData,
-      Content: markdown,
+      content: markdown,
     });
   };
 

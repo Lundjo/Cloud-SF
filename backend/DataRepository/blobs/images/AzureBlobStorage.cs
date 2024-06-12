@@ -28,7 +28,7 @@ namespace DataRepository.Blobs.Images
                 var container = blobClient.GetContainerReference(containerName);
                 await container.CreateIfNotExistsAsync();
 
-                var fileName = Guid.NewGuid().ToString() + fileExtension;
+                var fileName = Guid.NewGuid().ToString() + "." + fileExtension;
                 var blob = container.GetBlockBlobReference(fileName);
 
                 // Set container access level to allow public access

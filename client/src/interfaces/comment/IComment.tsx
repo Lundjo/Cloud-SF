@@ -5,22 +5,22 @@ interface IComment {
   /**
    * The unique identifier of the comment.
    */
-  Id: string;
+  id: string;
 
   /**
    * The author of the comment.
    */
-  Author: string;
+  author: string;
 
   /**
    * The unique identifier of the post for which the comment has been made.
    */
-  PostId: string;
+  postId: string;
 
   /**
    * The content of the comment.
    */
-  Content: string;
+  content: string;
 }
 
 export default IComment;

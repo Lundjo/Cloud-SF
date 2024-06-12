@@ -43,7 +43,7 @@ const Profile: React.FC<ISearchBarQueryProps> = ({ query, setQuery }) => {
           );
           if (userData) {
             setUserData(userData);
-            const response: Response = await fetch(userData.ImageBlobUrl);
+            const response: Response = await fetch(userData.imageBlobUrl);
             if (!response.ok) {
               throw new Error(`Failed to fetch image: ${response.status}`);
             }
@@ -178,15 +178,15 @@ const Profile: React.FC<ISearchBarQueryProps> = ({ query, setQuery }) => {
                   <input
                     type="text"
                     autoFocus
-                    value={userData?.FirstName}
-                    onChange={(e) => handleChange(e, "FirstName")}
+                    value={userData?.firstName}
+                    onChange={(e) => handleChange(e, "firstName")}
                     className="w-1/2 rounded-lg border border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 p-3 text-sm"
                     placeholder="First Name"
                   />
                   <input
                     type="text"
-                    value={userData?.LastName}
-                    onChange={(e) => handleChange(e, "LastName")}
+                    value={userData?.lastName}
+                    onChange={(e) => handleChange(e, "lastName")}
                     className="w-1/2 rounded-lg border border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 p-3 text-sm"
                     placeholder="Last Name"
                   />
@@ -194,15 +194,15 @@ const Profile: React.FC<ISearchBarQueryProps> = ({ query, setQuery }) => {
                 <div className="flex space-x-4">
                   <input
                     type="text"
-                    value={userData?.Address}
-                    onChange={(e) => handleChange(e, "Address")}
+                    value={userData?.address}
+                    onChange={(e) => handleChange(e, "address")}
                     className="w-1/2 rounded-lg border border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 p-3 text-sm"
                     placeholder="Address"
                   />
                   <input
                     type="text"
-                    value={userData?.City}
-                    onChange={(e) => handleChange(e, "City")}
+                    value={userData?.city}
+                    onChange={(e) => handleChange(e, "city")}
                     className="w-1/2 rounded-lg border border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 p-3 text-sm"
                     placeholder="City"
                   />
@@ -210,23 +210,23 @@ const Profile: React.FC<ISearchBarQueryProps> = ({ query, setQuery }) => {
                 <div className="flex space-x-4">
                   <input
                     type="text"
-                    value={userData?.Country}
-                    onChange={(e) => handleChange(e, "Country")}
+                    value={userData?.country}
+                    onChange={(e) => handleChange(e, "country")}
                     className="w-1/2 rounded-lg border border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 p-3 text-sm"
                     placeholder="Country"
                   />
                   <input
                     type="text"
-                    value={userData?.Phone}
-                    onChange={(e) => handleChange(e, "Phone")}
+                    value={userData?.phone}
+                    onChange={(e) => handleChange(e, "phone")}
                     className="w-1/2 rounded-lg border border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 p-3 text-sm"
                     placeholder="Phone"
                   />
                 </div>
                 <input
                   type="password"
-                  value={userData?.Password}
-                  onChange={(e) => handleChange(e, "Password")}
+                  value={userData?.password}
+                  onChange={(e) => handleChange(e, "password")}
                   className="w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-primary-500 focus:border-primary-500 p-3 text-sm"
                   placeholder="Password"
                 />

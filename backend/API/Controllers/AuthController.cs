@@ -70,10 +70,10 @@ namespace API.Controllers
             {
                 // Access profile picture
                 var file = Request.Form.Files[0]; // Only one file is uploaded
-                var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.ToString().Trim('"');
+                var fileName = file.ContentType.Split("/")[1];
 
                 // Get file extension
-                var fileExtension = Path.GetExtension(fileName).ToLower();
+                var fileExtension = fileName;
 
                 new AzureTableStorageCloudAccount();
 

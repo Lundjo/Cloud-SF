@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj": {}
+    "D:\\clout sf\\Cloud-SF\\backend\\DataRepository\\DataRepository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj": {
+    "D:\\clout sf\\Cloud-SF\\backend\\DataRepository\\DataRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj",
+        "projectUniqueName": "D:\\clout sf\\Cloud-SF\\backend\\DataRepository\\DataRepository.csproj",
         "projectName": "DataRepository",
-        "projectPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\DataRepository.csproj",
+        "projectPath": "D:\\clout sf\\Cloud-SF\\backend\\DataRepository\\DataRepository.csproj",
         "packagesPath": "C:\\Users\\Ludi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ludi\\Desktop\\ServiceFabric\\DataRepository\\obj\\",
+        "outputPath": "D:\\clout sf\\Cloud-SF\\backend\\DataRepository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ludi\\AppData\\Roaming\\NuGet\\NuGet.Config",

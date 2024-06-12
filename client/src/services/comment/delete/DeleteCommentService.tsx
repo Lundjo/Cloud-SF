@@ -7,7 +7,7 @@ const DeleteCommentService = async (
 ): Promise<boolean> => {
   try {
     const response: AxiosResponse = await axios.delete(
-      API_ENDPOINT + `comment/delete/?commentId=${commentId}`,
+      API_ENDPOINT + `comment/delete/${commentId}/`,
       {
         headers: {
           Authorization: `Bearer ${token}`,

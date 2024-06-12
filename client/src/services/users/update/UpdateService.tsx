@@ -18,20 +18,20 @@ const UpdateUserInformationService = async (
   try {
     // Convert from user data to RegisteredUser
     const updateUser: IUpdateUser = {
-      firstName: user.FirstName,
-      lastName: user.LastName,
-      address: user.Address,
-      city: user.City,
-      country: user.Country,
-      phone: user.Phone,
-      email: user.Email,
-      password: user.Password,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      address: user.address,
+      city: user.city,
+      country: user.country,
+      phone: user.phone,
+      email: user.email,
+      password: user.password,
       image: image,
-      imageBlobUrl: user.ImageBlobUrl,
-      PartitionKey: user.PartitionKey,
-      RowKey: user.RowKey,
-      Timestamp: user.Timestamp,
-      ETag: user.ETag,
+      imageBlobUrl: user.imageBlobUrl,
+      PartitionKey: user.partitionKey,
+      RowKey: user.rowKey,
+      Timestamp: user.timestamp,
+      ETag: user.eTag,
       newImage: image?.name ? true : false,
     };
 

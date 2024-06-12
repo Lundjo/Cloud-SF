@@ -3,19 +3,19 @@ import IComment from "../../interfaces/comment/IComment";
 const ValidateCommentData = (postData: IComment): string[] => {
   const errors: string[] = [];
 
-  if (!postData.Author.trim()) {
+  if (!postData.author.trim()) {
     errors.push("author");
   }
 
-  if (!postData.PostId.trim()) {
+  if (!postData.postId.trim()) {
     errors.push("post");
   }
 
-  if (!postData.Content.trim()) {
+  if (!postData.content.trim()) {
     errors.push("comment");
   }
 
-  if (!postData.Author.trim()) {
+  if (!postData.author.trim()) {
     errors.push("author");
   }
 

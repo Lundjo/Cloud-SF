@@ -45,7 +45,7 @@ const Home: React.FC<ISearchBarQueryProps> = ({query, setQuery}) => {
       if (response) {
         setPosts(response);
         if(response.length > 0){
-          setId(response[response.length - 1].Id);
+          setId(response[response.length - 1].id);
         }
       }
       
@@ -77,11 +77,11 @@ const Home: React.FC<ISearchBarQueryProps> = ({query, setQuery}) => {
         // Combine the existing posts with the new posts
         const combinedPosts = [...posts, ...newPosts];
         // Use a Map to filter out duplicate posts based on their IDs
-        const uniquePostsMap = new Map(combinedPosts.map(post => [post.Id, post]));
+        const uniquePostsMap = new Map(combinedPosts.map(post => [post.id, post]));
         const uniquePosts = Array.from(uniquePostsMap.values());
         
         setPosts(uniquePosts);
-        setId(newPosts[newPosts.length - 1].Id);
+        setId(newPosts[newPosts.length - 1].id);
     }
 };
 

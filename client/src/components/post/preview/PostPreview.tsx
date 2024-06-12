@@ -21,7 +21,7 @@ import Downvote from "../../../services/post/create/Downvote";
 import Subscribe from "../../../services/post/create/SubscribeService";
 
 const PostPreview: React.FC<{ post: IPost }> = ({
-  post: { Id, Author, Title, Content, HasImage, ImageBlobUrl },
+  post: { id, author, title, content, hasImage, imageBlobUrl },
 }) => {
   const [authorImage, setAuthorImage] = useState<string>("");
   const [comments, setComments] = useState<number>(0);
@@ -30,7 +30,7 @@ const PostPreview: React.FC<{ post: IPost }> = ({
   const [voteCount, setVoteCount] = useState<number>(0);
   const {token} = useAuth();
   const [voteStatus, setVoteStatus] = useState<string | null>(
-    localStorage.getItem(`post_${Id}_voteStatus`)
+    localStorage.getItem(`post_${id}_voteStatus`)
   );
   
 
@@ -39,17 +39,17 @@ const PostPreview: React.FC<{ post: IPost }> = ({
       return;
     }
 
-    const voted = await Upvote(Id, email, token?.token ?? "");
+    const voted = await Upvote(id, email, token?.token ?? "");
 
     if (voted) {
       if (voteStatus === "upvoted") {
         setVoteStatus(null);
         setVoteCount(voteCount - 1);
-        localStorage.removeItem(`post_${Id}_voteStatus`);
+        localStorage.removeItem(`post_${id}_voteStatus`);
       } else {
         setVoteStatus("upvoted");
         setVoteCount(voteCount + (voteStatus === "downvoted" ? 2 : 1));
-        localStorage.setItem(`post_${Id}_voteStatus`, "upvoted");
+        localStorage.setItem(`post_${id}_voteStatus`, "upvoted");
       }
     }
     
@@ -60,55 +60,55 @@ const PostPreview: React.FC<{ post: IPost }> = ({
       return;
     }
 
-    const voted = await Downvote(Id, email, token?.token ?? "");
+    const voted = await Downvote(id, email, token?.token ?? "");
 
     if(voted){
       if (voteStatus === "downvoted") {
         setVoteStatus(null);
         setVoteCount(voteCount + 1);
-        localStorage.removeItem(`post_${Id}_voteStatus`);
+        localStorage.removeItem(`post_${id}_voteStatus`);
       } else {
         setVoteStatus("downvoted");
         setVoteCount(voteCount - (voteStatus === "upvoted" ? 2 : 1));
-        localStorage.setItem(`post_${Id}_voteStatus`, "downvoted");
+        localStorage.setItem(`post_${id}_voteStatus`, "downvoted");
       }
     }
   };
 
   const HandleSubscribe = async () =>{
-    await Subscribe(Id, email ?? "", token?.token ?? "");
+    await Subscribe(id, email ?? "", token?.token ?? "");
   };
 
   useEffect(() => {
     const fetch = async () => {
       // fetch profile picture
-      const picture: string = await GetProfilePictureByEmailService(Author);
+      const picture: string = await GetProfilePictureByEmailService(author);
       setAuthorImage(picture);
     };
 
     fetch();
-  }, [Author, email]);
+  }, [author, email]);
   useEffect(() => {}, []);
 
   useEffect(() => {
     const fetch = async () => {
       // fetch comment number
-      const commentNum: number = await ReadNumberOfCommentsByPostId(Id);
+      const commentNum: number = await ReadNumberOfCommentsByPostId(id);
       setComments(commentNum);
-      const votes: number = await ReadNumberOfVotes(Id);
+      const votes: number = await ReadNumberOfVotes(id);
       setVoteCount(votes);
     };
 
     fetch();
-  }, [Id, Title]);
+  }, [id, title]);
 
   useEffect(() => {
-    setVoteStatus(localStorage.getItem(`post_${Id}_voteStatus`));
-  }, [Id, email]);
+    setVoteStatus(localStorage.getItem(`post_${id}_voteStatus`));
+  }, [id, email]);
 
   useEffect(() => {
     if (!email) {
-      localStorage.removeItem(`post_${Id}_voteStatus`);
+      localStorage.removeItem(`post_${id}_voteStatus`);
     }
   }, [email]);
 
@@ -119,7 +119,7 @@ const PostPreview: React.FC<{ post: IPost }> = ({
         <div>
           <PostHeading
             imageBlobUrl={authorImage}
-            author={"u/" + Author.split("@")[0]}
+            author={"u/" + author.split("@")[0]}
             isPreviewMode={true}
           />
         </div>
@@ -134,16 +134,16 @@ const PostPreview: React.FC<{ post: IPost }> = ({
       <div
         className="cursor-pointer flex"
         onClick={() => {
-          navigate(`/post/${Id}`);
+          navigate(`/post/${id}`);
         }}
       >
         <div className="flex flex-col items-start w-full">
-          <h1 className="font-semibold text-3xl pl-7 break-words line-clamp-2">{Title.substring(0, 50)}</h1>
+          <h1 className="font-semibold text-3xl pl-7 break-words line-clamp-2">{title.substring(0, 50)}</h1>
           {/* Post content */}
           <div className="p-4">
             <MDXEditor
               readOnly
-              markdown={Content.substring(0, 200)}
+              markdown={content.substring(0, 200)}
               className="min-h-12 w-full focus:outline-none rounded-lg focus:ring-primary-500 focus:border-primary-500  break-words line-clamp-5"
               plugins={[
                 headingsPlugin(),
@@ -156,8 +156,8 @@ const PostPreview: React.FC<{ post: IPost }> = ({
           </div>
         </div>
         {/* Picture for post */}
-        {HasImage && (
-          <img src={ImageBlobUrl} className="w-40 h-40 rounded-2xl" />
+        {hasImage && (
+          <img src={imageBlobUrl} className="w-40 h-40 rounded-2xl" />
         )}
       </div>
       {/* Upvote, downvote comments count */}
@@ -167,7 +167,7 @@ const PostPreview: React.FC<{ post: IPost }> = ({
       onDownvote={handleDownvote}
       isUpvoted={voteStatus === "upvoted"}
       isDownvoted={voteStatus === "downvoted"}
-      postId={Id}
+      postId={id}
       />
       </div>
 

@@ -19,7 +19,7 @@ const GetUserByEmail = async (email: string, token: string | null = null): Promi
         }
 
         // Send a GET request to the specified API endpoint with the provided email and optional authorization header
-        const response = await axios.get(API_ENDPOINT + `user/get/?email=${email}`, { headers });
+        const response = await axios.get(API_ENDPOINT + `user/get/${email}/`, { headers });
         
         // If the request is successful, return the response data
         return response.data;

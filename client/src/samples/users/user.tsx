@@ -4,19 +4,19 @@ import IUser from "../../interfaces/users/user/IUser";
  * Represents a user object with various properties.
  */
 const emptyUser: IUser = {
-  FirstName: "",
-  LastName: "",
-  Address: "",
-  City: "",
-  Country: "",
-  Phone: "",
-  Email: "",
-  Password: "",
-  ImageBlobUrl: "",
-  Timestamp: "",
-  PartitionKey: "User",
-  RowKey: "User",
-  ETag: ""
+  firstName: "",
+  lastName: "",
+  address: "",
+  city: "",
+  country: "",
+  phone: "",
+  email: "",
+  password: "",
+  imageBlobUrl: "",
+  timestamp: "",
+  partitionKey: "User",
+  rowKey: "User",
+  eTag: ""
 };
 
 export default emptyUser;

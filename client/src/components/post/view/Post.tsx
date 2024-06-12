@@ -113,13 +113,13 @@ const Post: React.FC<IPostProp> = ({ postId }) => {
         setPost(response);
 
         // if author access post, enable delete post
-        if (response.Author === email) {
+        if (response.author === email) {
           setIsDeletePostAvailable(true);
         }
 
         // now fetch profile picture of author by email
         const image: string = await GetProfilePictureByEmailService(
-          response.Author
+          response.author
         );
 
         setAuthorImage(image);
@@ -196,7 +196,7 @@ const Post: React.FC<IPostProp> = ({ postId }) => {
             <div>
               <PostHeading
                 imageBlobUrl={authorImage}
-                author={"u/" + post.Author.split("@")[0]}
+                author={"u/" + post.author.split("@")[0]}
               />
             </div>
             <div className="flex items-center">
@@ -208,12 +208,12 @@ const Post: React.FC<IPostProp> = ({ postId }) => {
           </div>
           <div className="flex flex-col-reverse md:flex-row items-start w-full ml-4">
             <div className="w-full">
-              <h1 className="font-semibold text-3xl pl-7">{post.Title}</h1>
+              <h1 className="font-semibold text-3xl pl-7">{post.title}</h1>
               {/* Post content */}
               <div className="p-4">
                 <MDXEditor
                   readOnly
-                  markdown={post.Content}
+                  markdown={post.content}
                   className="min-h-12 w-full focus:outline-none rounded-lg focus:ring-primary-500 focus:border-primary-500"
                   plugins={[
                     headingsPlugin(),
@@ -227,7 +227,7 @@ const Post: React.FC<IPostProp> = ({ postId }) => {
               {/* upvote, downvore comments count */}
               <PostStats
                 upvotesDownvotesCount={voteCount}
-                numberOfComments={post.Comments.length}
+                numberOfComments={post.comments.length}
                   onUpvote={handleUpvote}
                   onDownvote={handleDownvote}
                   isUpvoted={voteStatus === "upvoted"}
@@ -236,8 +236,8 @@ const Post: React.FC<IPostProp> = ({ postId }) => {
                   />
             </div>
              {/* Picture for post */}
-             {post.HasImage && (
-              <img src={post.ImageBlobUrl} className="w-40 h-40 rounded-2xl" />
+             {post.hasImage && (
+              <img src={post.imageBlobUrl} className="w-40 h-40 rounded-2xl" />
             )}
           </div>
           <br />
@@ -252,7 +252,7 @@ const Post: React.FC<IPostProp> = ({ postId }) => {
           )}
 
           {/* Render no comments if there are no comments */}
-          {post.Comments?.length === 0 ? (
+          {post.comments?.length === 0 ? (
             <div className="mb-8">
               <div className="p-4 mt-2">
                 <NoComments />
@@ -260,7 +260,7 @@ const Post: React.FC<IPostProp> = ({ postId }) => {
             </div>
           ) : (
             <div className="mb-12">
-              {post.Comments.map((comment: IComment, index: number) => (
+              {post.comments.map((comment: IComment, index: number) => (
                 <div key={index}>
                   <Comment comment={comment} PopUp={popupfunc} />
                 </div>

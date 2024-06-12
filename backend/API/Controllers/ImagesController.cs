@@ -17,11 +17,11 @@ namespace API.Controllers
         /// Returns the profile picture URL of the user if found.
         /// If the user is not found, appropriate HTTP status codes are returned.
         /// </returns>
-        [HttpGet("{email}")]
+        [HttpGet("get/{email}")]
         public async Task<IActionResult> GetProfilePicture(string email)
         {
             // Retrieve the user's profile picture URL from the data repository
-            string picture = await ReadUserProfilePicture.Run(AzureTableStorageCloudAccount.GetCloudTable("users"), "User", email);
+            string picture = await ReadUserProfilePicture.Run(AzureTableStorageCloudAccount.GetCloudTable("users"), email);
 
             // Return the user's profile picture if found
             if (picture != null)

@@ -13,7 +13,7 @@ using System.Net;
 
 namespace API.Controllers
 {
-    [Route("/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class CommentController : Controller
     {
@@ -36,7 +36,7 @@ namespace API.Controllers
             try
             {
                 // Create a new Comment object
-                Comment comment = new Comment(_comment.Author, _comment.PostId, _comment.Content);
+                Comment comment = new Comment(_comment.author, _comment.postId, _comment.content);
 
                 // Insert the comment into the Azure table
                 bool insert_result = await InsertComment.Execute(AzureTableStorageCloudAccount.GetCloudTable("comments"), comment);
@@ -69,7 +69,7 @@ namespace API.Controllers
         /// </summary>
         /// <param name="commentId">The ID of the comment to be deleted.</param>
         /// <returns>An <see cref="IHttpActionResult"/> representing the result of the operation.</returns>
-        [HttpDelete("{commentId}")]
+        [HttpDelete("delete/{commentId}")]
         [JwtAuthenticationFilter] // Requires JWT authentication
         public async Task<IActionResult> Delete(string commentId)
         {

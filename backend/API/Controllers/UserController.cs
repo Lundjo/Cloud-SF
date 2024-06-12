@@ -25,7 +25,7 @@ namespace API.Controllers
         /// HTTP 404 Not Found if the user is not found,
         /// or HTTP 401 Unauthorized if the request is not authorized.
         /// </returns>
-        [HttpGet("{email}")]
+        [HttpGet("get/{email}")]
         [JwtAuthenticationFilter]
         public async Task<IActionResult> Get(string email)
         {
@@ -73,13 +73,7 @@ namespace API.Controllers
             }
 
             try
-            {
-                // Access profile picture
-                var file = Request.Form.Files[0]; // Only one file is uploaded
-                var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.ToString().Trim('"');
-
-                // Get file extension
-                var fileExtension = Path.GetExtension(fileName).ToLower();
+            {               
 
                 // Access form data and put into user object
                 User user = new User
@@ -103,6 +97,14 @@ namespace API.Controllers
                 // if new image not provided file will be null
                 if (bool.Parse(newImage))
                 {
+                    // Access profile picture
+                    var file = Request.Form.Files[0]; // Only one file is uploaded
+                    var fileName = file.ContentType.Split("/")[1];
+
+                    // Get file extension
+                    var fileExtension = fileName;
+
+                    new AzureTableStorageCloudAccount();
 
                     // Upload file to Azure Blob Storage
                     (bool success, string blobUrl) = await AzureBlobStorage.UploadFileToBlobStorage(file.OpenReadStream(), fileExtension, "images");

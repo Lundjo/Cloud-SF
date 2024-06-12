@@ -7,7 +7,7 @@ const DeletePostService = async (
 ): Promise<boolean> => {
   try {
     const response: AxiosResponse = await axios.delete(
-      API_ENDPOINT + `post/delete/?postId=${postId}`,
+      API_ENDPOINT + `post/delete/${postId}/`,
       {
         headers: {
           Authorization: `Bearer ${token}`,

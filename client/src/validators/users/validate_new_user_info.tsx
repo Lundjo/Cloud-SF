@@ -9,32 +9,32 @@ const ValidateUpdateData = (user: IUser): string[] => {
     const errors: string[] = [];
   
     // Check if required fields are empty
-    if (!user.FirstName.trim()) {
+    if (!user.firstName.trim()) {
       errors.push("first name");
     }
-    if (!user.LastName.trim()) {
+    if (!user.lastName.trim()) {
       errors.push("last name");
     }
-    if (!user.Address.trim()) {
+    if (!user.address.trim()) {
       errors.push("address");
     }
-    if (!user.City.trim()) {
+    if (!user.city.trim()) {
       errors.push("city");
     }
-    if (!user.Country.trim()) {
+    if (!user.country.trim()) {
       errors.push("country");
     }
-    if (!user.Phone.trim()) {
+    if (!user.phone.trim()) {
       errors.push("phone number");
-    } else if (!/^\d{10}$/.test(user.Phone.trim())) {
+    } else if (!/^\d{10}$/.test(user.phone.trim())) {
       errors.push("phone number");
-    } else if (!user.Phone.trim().startsWith("06")) {
+    } else if (!user.phone.trim().startsWith("06")) {
       errors.push("phone number");
     }
    
-    if (!user.Password.trim()) {
+    if (!user.password.trim()) {
       errors.push("password");
-    } else if (user.Password.trim().length < 6) {
+    } else if (user.password.trim().length < 6) {
       errors.push("password");
     }
   

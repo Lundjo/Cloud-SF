@@ -6,7 +6,7 @@ const GetProfilePictureByEmailService = async (
 ): Promise<string> => {
   try {
     const response: AxiosResponse = await axios.get(
-      API_ENDPOINT + `images/get/?email=${email}`
+      API_ENDPOINT + `images/get/${email}/`
     );
 
     if (response.status === 200 || response.status === 204) {

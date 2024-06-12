@@ -1,13 +1,13 @@
 import IPost from "../../interfaces/post/view/IPost";
 
 const emptyPost: IPost = {
-  Id: '',
-  Author: '',
-  Title: '',
-  Content: '',
-  HasImage: false,
-  ImageBlobUrl: '',
-  Comments: [],
+  id: '',
+  author: '',
+  title: '',
+  content: '',
+  hasImage: false,
+  imageBlobUrl: '',
+  comments: [],
   };
   
   export default emptyPost;

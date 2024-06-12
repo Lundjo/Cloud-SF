@@ -9,7 +9,7 @@ import DeleteCommentService from "../../../services/comment/delete/DeleteComment
 import IPopUpProp from "../../../interfaces/popup/IPopUpProp";
 
 const Comment: React.FC<{ comment: IComment, PopUp: IPopUpProp }> = ({
-  comment: { Author, Content, Id }, PopUp: { SetUpPopup }
+  comment: { author, content, id }, PopUp: { SetUpPopup }
 }) => {
   const { email, token } = useAuth();
   const [imageOfCommentAuthor, setImageOfCommentAuthor] = useState<string>("");
@@ -17,21 +17,21 @@ const Comment: React.FC<{ comment: IComment, PopUp: IPopUpProp }> = ({
     useState<boolean>(false);
 
   useEffect(() => {
-    if (Author === email) {
+    if (author === email) {
       setIsDeleteCommentAvailable(true);
     }
 
     const fetch = async () => {
       // fetch profile picture
-      const picture: string = await GetProfilePictureByEmailService(Author);
+      const picture: string = await GetProfilePictureByEmailService(author);
       setImageOfCommentAuthor(picture);
     };
 
     fetch();
-  }, [Author, email]);
+  }, [author, email]);
 
   const DeleteComment = async () => {
-    const success: boolean = await DeleteCommentService(Id, token?.token ?? "");
+    const success: boolean = await DeleteCommentService(id, token?.token ?? "");
 
     if (success) {
       window.location.reload();
@@ -96,13 +96,13 @@ const Comment: React.FC<{ comment: IComment, PopUp: IPopUpProp }> = ({
           <div>
             <PostHeading
               imageBlobUrl={imageOfCommentAuthor}
-              author={Author.split("@")[0]}
+              author={author.split("@")[0]}
               isCommentHeading={true}
             />
             <div className="mt-1">
               <MDXEditor
                 readOnly
-                markdown={Content}
+                markdown={content}
                 placeholder="Add a comment"
                 className="min-h-px w-full focus:outline-none rounded-lg focus:ring-primary-500 focus:border-primary-500"
               />

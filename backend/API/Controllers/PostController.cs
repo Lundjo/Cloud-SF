@@ -172,7 +172,7 @@ namespace API.Controllers
         /// Returns NotFound() if the post to delete is not found.
         /// Returns InternalServerError() if an unexpected error occurs during the deletion process.
         /// </returns>
-        [HttpDelete("{postId}")]
+        [HttpDelete("delete/{postId}")]
         [JwtAuthenticationFilter] // Requires JWT authentication
         public async Task<IActionResult> Delete(string postId)
         {
